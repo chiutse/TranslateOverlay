@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.settingsPanel = new System.Windows.Forms.Panel();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.hideButton = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.languageTextbox = new System.Windows.Forms.TextBox();
@@ -37,16 +41,14 @@
             this.translateKeyTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.saveButton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.settingsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // settingsPanel
             // 
             this.settingsPanel.BackColor = System.Drawing.Color.White;
+            this.settingsPanel.Controls.Add(this.label7);
             this.settingsPanel.Controls.Add(this.saveButton);
             this.settingsPanel.Controls.Add(this.label6);
             this.settingsPanel.Controls.Add(this.label5);
@@ -64,9 +66,46 @@
             this.settingsPanel.Size = new System.Drawing.Size(330, 190);
             this.settingsPanel.TabIndex = 0;
             // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(233, 137);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 11;
+            this.saveButton.Text = "SAVE";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 12);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Press F3 to show/hide this panel.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 149);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(167, 12);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Press F2 or F6 for translate by line.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(174, 12);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Press F1 or F5 for translate by word.";
+            // 
             // hideButton
             // 
-            this.hideButton.Location = new System.Drawing.Point(233, 150);
+            this.hideButton.Location = new System.Drawing.Point(233, 162);
             this.hideButton.Name = "hideButton";
             this.hideButton.Size = new System.Drawing.Size(75, 23);
             this.hideButton.TabIndex = 7;
@@ -137,42 +176,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Yandex Translate API KEY:";
             // 
-            // label4
+            // label7
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 12);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Press F1 or F4 for translate by word.";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 149);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 12);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Press F2 or F5 for translate by line.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 12);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Press F3 to show/hide this panel.";
-            // 
-            // saveButton
-            // 
-            this.saveButton.Location = new System.Drawing.Point(233, 121);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 11;
-            this.saveButton.Text = "SAVE";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 12);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Press F4 to clear textbox.";
             // 
             // Form1
             // 
@@ -208,6 +219,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label label7;
     }
 }
 
